@@ -38,6 +38,7 @@ body {
 
 .vector img {
     width: 12em;
+    height: 10em;
 }
 
 /* ===== LOGIN-MSG ===== */
@@ -232,4 +233,14 @@ body {
 .sign-up a {
     text-decoration: none;
     color: #0df6e3;
+}
+
+@media screen and (max-width: 500px) {
+    .inputs input {
+        margin-left: 18px;
+    }
+    
+    #pass-input {
+        margin-left: 21px;
+    }
 }
