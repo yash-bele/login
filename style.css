@@ -22,10 +22,10 @@
 }
 
 .container {
-    margin: 0px 30px;
+    margin: 0px 15px;
     border: 1px solid #54a3ea;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px 15px;
     color: white;
     width: 25em;
 }
