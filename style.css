@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #171b46, #0b0c1b);
+}
+
+/* ===== CONTAINER ===== */
+/* ===== CONTAINER ===== */
+
+.container {
+    margin: 0px 30px;
+    border: 1px solid #54a3ea;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    width: 25em;
+}
+
+/* ===== VECTOR ===== */
+/* ===== VECTOR ===== */
+
+.vector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.vector img {
+    width: 12em;
+}
+
+/* ===== LOGIN-MSG ===== */
+/* ===== LOGIN-MSG ===== */
+
+.login-msg h3:first-child {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.login-msg h3:last-child {
+    font-weight: 500;
+    font-size: 13px;
+    color: #6a6677;
+}
+
+/* ===== INPUTS ===== */
+/* ===== INPUTS ===== */
+
+.inputs {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.inputs .input-1 {
+    background-color: #171b46;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.inputs .input-1 .envelope {
+    width: 20px;
+    fill: #6a6677;
+}
+
+.inputs .input-1 label {
+    position: absolute;
+    color: #6a6677;
+    font-size: 15px;
+    font-weight: 500;
+    left: 50px;
+    top: 12px;
+    transition: .2s;
+}
+
+.inputs .input-2 {
+    background-color: #171b46;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.inputs .input-2 label {
+    position: absolute;
+    color: #6a6677;
+    font-size: 15px;
+    font-weight: 500;
+    left: 50px;
+    top: 13px;
+    transition: .2s;
+}
+
+.inputs .input-2 .lock-svg {
+    margin-left: -2px;
+    width: 21px;
+    fill: #6a6677;
+}
+
+.inputs .input-2 .eye-svg {
+    width: 23px;
+    fill: #6a6677;
+    margin-left: auto;
+    display: block;
+}
+
+.inputs .input-2 #eye-hidden {
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.inputs .input-2 #eye-hidden::before {
+    position: absolute;
+    content: "";
+    background-color: #6a6677;
+    transform: rotate(-30deg);
+    width: 2px;
+    height: 25px;
+    left: 43%;
+    top: -2px;
+}
+
+.inputs .input-2 #eye-hidden::after {
+    position: absolute;
+    content: "";
+    background: #171b46;
+    transform: rotate(-30deg);
+    width: 2px;
+    height: 25px;
+    left: 49%;
+    top: -3px;
+}
+
+.inputs .input-2 #eye-show {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.inputs input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 18px;
+    z-index: 1;
+}
+
+#pass-input {
+    margin-left: 20px;
+}
+
+.inputs input[type="text"] {
+    color: white;
+    font-size: 11px;
+    padding-top: 2px;
+}
+
+.inputs input[type="password"] {
+    color: white;
+    font-size: 11px;
+    padding-top: 2px;
+}
+
+.inputs input:focus + label, .inputs input:not(:placeholder-shown) + label {
+    top: 0px;
+    font-size: 12px;
+}
+
+/* ===== FORGOT-PASS ===== */
+/* ===== FORGOT-PASS ===== */
+
+.forgot-pass {
+    text-align: end;
+}
+
+.forgot-pass a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #54a3ea;
+}
+
+/* ===== LOGIN-BTN ===== */
+/* ===== LOGIN-BTN ===== */
+
+.login-btn button {
+    width: 100%;
+    color: white;
+    background: #ff1100;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 0px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 25px 0px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.login-btn button:hover {
+    background: #e00f00;
+}
+
+/* ===== SIGN-UP ===== */
+/* ===== SIGN-UP ===== */
+
+.sign-up {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #6a6677;
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: #0df6e3;
+}
